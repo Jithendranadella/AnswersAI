@@ -1,0 +1,142 @@
+/* Basic dashboard styling */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    padding: 5px;
+  }
+  
+  .header {
+    display: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure the header takes full width */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    flex-grow: 1; /* Allow the title to take available space */
+  }
+  
+  .edit-button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Logout icon */
+  .logout-icon {
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+    margin-left: 2px;
+  }
+  
+  .logout-icon:hover {
+    color: #f44336; /* Red color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Chart container styles */
+  .chart-container {
+    width: 50vw; /* 50% of the viewport width */
+    height: 50vh; /* 50% of the viewport height */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Slide-over styles */
+  .slide-over {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 90vh;
+    background-color: #fff;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .slide-over.open {
+    right: 0;
+  }
+  
+  .slide-over-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .slide-over-content h2 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .balance {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .form-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Styles for the hover info component */
+  .hover-info {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    max-width: 250px;
+    text-align: center;
+    z-index: 999;
+    pointer-events: none; /* Prevent HoverInfo from interfering with mouse interactions */
+  }
+  
+  .hover-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .hover-info p {
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,103 @@
+/* Slide-over styles */
+.slide-over {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Start off-screen */
+  width: 350px;
+  height: 90vh; /* Constrain to viewport height */
+  background-color: #fff;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease; /* Smooth transition */
+  z-index: 1000;
+  padding: 30px;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.slide-over.open {
+  right: 0; /* Move to the right when open */
+}
+
+.slide-over-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; /* Fill the height of the slide-over */
+}
+
+.slide-over-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.form-section {
+  margin-bottom: 5px;
+}
+
+.form-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.balance {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1px;
+  margin-left: 5px;
+}
+
+.form-buttons button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.form-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.close-btn {
+  background-color: #ff3b30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.close-btn:hover {
+  background-color: #ff1f13;
+}
